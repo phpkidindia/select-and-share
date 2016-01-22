@@ -1,0 +1,47 @@
+p::selection {
+  background-color: #34495E;
+  color : #ffffff;
+}
+
+p::-moz-selection {
+  background-color: #34495E;
+  color : #ffffff;
+}
+
+.social_share_overlay {
+  background-color: #34495E;
+  border-radius: 4px;
+  position: absolute;
+  z-index: 99;
+  max-width: 340px;
+  animation-name: slideDown;
+  animation-duration: 300ms;
+  animation-timing-function : ease-in-out;
+  margin-left : 5px;
+  overflow : hidden;
+  margin-top : 5px;
+}
+
+.social_share_overlay a {
+  padding: 7px 15px;
+  color: #ffffff;
+  display : inline-block;
+  border-right : 1px solid #ffffff;
+}
+
+.social_share_overlay a:last-child{
+	border : medium none;
+}
+
+.social_share_overlay a:hover{
+	background-color: #19B5FE
+}
+
+.social_share_overlay p {
+  margin-top: 0;
+}
+
+@keyframes slideDown {
+	0% { opacity : 0;  transform: translateY(-40%);}
+	100% {opacity : 1;  transform: translateY(0);}
+}
