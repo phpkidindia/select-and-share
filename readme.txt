@@ -17,8 +17,19 @@ Allows visitors of your site to share your site's content just by selecting the 
 
 == Installation ==
 	
- * Upload the plugin files to the '/wp-content/plugins/' directory
- * Activate the plugin through the 'Plugins' menu in WordPress
- 
- = 1.0.0 =
+* Upload the plugin files to the '/wp-content/plugins/' directory
+* Activate the plugin through the 'Plugins' menu in WordPress
+
+== Changelog ==
+= 1.0.0 =
 First Release
+
+== Upgrade Notice == 
+
+* The next upgrade will happen with facebook and other social network sites
+
+== Frequently Asked Questions ==
+
+= Does this plugin depends upon any js library ? =
+
+No it works on plain javascript so it will be working fine with all platforms.

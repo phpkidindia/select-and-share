@@ -27,7 +27,7 @@ function sts_css() {
         * It will be called only on your plugin admin page, enqueue our stylesheet here
         */
        wp_enqueue_style( 'sts',  plugins_url('/css/select-and-share.css', __FILE__) );
-       wp_enqueue_style( 'font-awsome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.css' );
+       wp_enqueue_style( 'font-awsome',  plugins_url('/css/font-awesome.min.css', __FILE__) );
   }
 
 add_action( 'wp_enqueue_scripts', 'sts_js' );
@@ -52,14 +52,7 @@ function sts_options() {
 	echo '<h2>Welcome to Select And Share!</h2>';
 	echo '<p>Here is where the form would go if I actually had options.</p>';
 	?>
-<!--span class='st_facebook_large' st_url="http://ashokg.in" displayText='Facebook'></span>
-<span class='st_twitter_large' st_url="http://ashokg.in/woocommerce-pay-to-upload/" displayText='Tweet'></span>
-<span class='st_linkedin_large' st_url="http://ashokg.in/woocommerce-pay-to-upload/"  displayText='LinkedIn'></span>
-<span class='st_pinterest_large' st_url="http://ashokg.in/woocommerce-pay-to-upload/" displayText='Pinterest'></span>
-<span class='st_email_large' st_url="http://ashokg.in/woocommerce-pay-to-upload/" displayText='Email'></span>-->
-<script type="text/javascript">var switchTo5x=true;</script>
-<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
-<script type="text/javascript">stLight.options({publisher: "7ddada2a-6487-41e9-b1a4-1cbf67c41f00", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
+
 <fieldset>
 <form method="post" action="">
 <p><?php 

@@ -48,6 +48,7 @@ function checkSelection(event) {
         /* Repeat community */
         createCommunity("http://www.twitter.com/share?text="+selected_text+'&via=wpashokg', 'twitter');
         createCommunity("http://www.linkedin.com/shareArticle?mini=true&summary="+selected_text+'&title='+selected_text+'&source=twitter&url='+current_page_url, 'linkedin');
+//        createCommunity("https://www.facebook.com/dialog/feed?" +'app_id='+self.appId +'&display=popup'+ '&caption='+encodeURIComponent(selected_text)+'&link='+encodeURIComponent(current_page_url)+'&href='+encodeURIComponent(current_page_url)+'&redirect_uri='+encodeURIComponent(current_page_url), 'facebook');
 
         /* Append wrapper to the body */
         document.body.appendChild(create_social_div);
