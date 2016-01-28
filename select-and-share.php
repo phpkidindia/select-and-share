@@ -86,11 +86,11 @@ if (isset ( $_POST ["submit"] )) {
 		$ststwitter = get_option('sts_twitter');
 		if(strlen($ststwitter)>0)
 		{
-			update_option('sts_twitter', $_POST['sts_twitter']);
+			update_option('sts_twitter',  sanitize_text_field($_POST['sts_twitter']));
 		}
 		else
 		{
-		add_option( 'sts_twitter', $_POST['sts_twitter'] );
+		add_option( 'sts_twitter',  sanitize_text_field($_POST['sts_twitter'] ));
 		}
 	}
 }
